@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#TODO make somethig lighter that does not relay on firefox such as showing in simple pdf viewrs like zathura mu or surf
+firefox --new-tab `curl -sL https://fcigeneve.org/fondation/horaires-de-prieres/ | grep  --max-count 2 -E --only-matching "https://fcigeneve.org/wp-content/uploads/.{0,60}\.pdf"`
